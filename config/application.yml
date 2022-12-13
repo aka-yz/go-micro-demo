@@ -5,7 +5,7 @@ app:
 db:
   # 这里支持多库配置
   default:
-    database: entry_task_db
+    database: demo_db
     dbType: mysql
     host: 127.0.0.1
     password: 123456
