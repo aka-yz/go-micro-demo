@@ -1,0 +1,6 @@
+{"level":"fatal","request_id":"","time":"2022-12-15 04:04:04","message":"failed to connect to redis; configs: [0x140001d2480]"}
+{"level":"fatal","request_id":"","time":"2022-12-15 04:05:39","message":"failed to connect to redis; configs: [0x14000136800]"}
+{"level":"fatal","request_id":"","time":"2022-12-15 14:22:19","message":"failed to connect to redis; configs: [0x14000136200]"}
+{"level":"fatal","request_id":"","time":"2022-12-15 15:50:29","message":"handler 异常%!(EXTRA []interface {}=[])"}
+{"level":"info","request_id":"","time":"2022-12-15 15:55:24","message":"nice inject"}
+{"level":"info","request_id":"","time":"2022-12-15 18:24:41","message":"gracefully shutdown gin server and attached go routines: timeout"}

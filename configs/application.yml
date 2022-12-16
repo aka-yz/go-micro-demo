@@ -1,0 +1,35 @@
+name: go-micro-demo
+
+httpclient:
+  maxconnectionnum: 100
+  timeout: 50000
+httpserver:
+  addr: :8088
+app:
+
+log:
+  dirpath: ./log/
+  maxfilesize:
+  rotateduration: 2h
+  level:
+
+db:
+  # 支持多库配置
+  default:
+    driver: mysql
+    dbname: test_db
+    username: yuezhroot
+    host: 127.0.0.1
+    password: root123
+    port: 3306
+pg:
+
+redis:
+  # 支持多redis源配置
+  0:
+    addr: 127.0.0.1:6379
+    db: 0
+    password:
+    readtimeout: 500
+    dialtimeout: 1000
+    isclustermode: false
