@@ -3,15 +3,22 @@ name: go-micro-demo
 httpclient:
   maxconnectionnum: 100
   timeout: 50000
+
 httpserver:
   addr: :8088
+
 app:
+  # internal/config/conf.go:4
+  validnameurl: http://www.baidu.com
+  chainid: 100
+  blocknums: 1998
+
+  TOKEN: adwe23rwfef
 
 log:
   dirpath: ./log/
   maxfilesize:
   rotateduration: 2h
-  level:
 
 db:
   # 支持多库配置
@@ -25,7 +32,7 @@ db:
 pg:
 
 redis:
-  # 支持多redis源配置
+  # 支持多redis源（cluster）配置
   0:
     addr: 127.0.0.1:6379
     db: 0

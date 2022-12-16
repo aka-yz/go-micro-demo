@@ -2,16 +2,12 @@ package conf
 
 //AppConf struct
 type AppConf struct {
-	ConfigKey   string
-	SellerAdmin SellerAdmin
-	Token       string `yaml:"TOKEN"`
-	APIHost     string `yaml:"API_HOST"`
+	ValidNameUrl string
+	ChainId      string
+	BlockNums    string
+	Token        string `yaml:"TOKEN"`
 }
 
 //Init Appconf
 func (c *AppConf) Init() {
-}
-
-//SellerAdmin struct
-type SellerAdmin struct {
 }
